@@ -1,0 +1,112 @@
+{
+  "name": "Pretzz",
+  "role": "UI / UX Designer",
+  "eyebrow": "HEY, I'M PRETZZ - ROBLOX UI DESIGNER",
+  "headline": "MAKING DESIGNS",
+  "headlineAccent": "FEEL ALIVE.",
+  "intro": "I design bold Roblox User Interface. From first prototype design to the final tiny detail.",
+  "aboutTitle": "Designer Interfaces for people to stare at.",
+  "about": "I'm a Roblox UI Designer focused on gameplay accessibility, creative, and beautifully polished interface. I love turning challenging ideas into designs that feel simple, beautiful and elegant.\n\nMy toolkit is centered around  Roblox Studio, Figma.",
+  "email": "iamabhinavks2010@gmail.com",
+  "location": "IST India",
+  "availability": "OPEN TO SELECT PROJECTS",
+  "footer": "Made with caffeine, curiosity & a lot of Figma.",
+  "contactTitle": "HAVE SOMETHING COOL IN MIND?",
+  "accent": "#ccfa5a",
+  "stats": [
+    {
+      "value": "01",
+      "label": "Core mission"
+    },
+    {
+      "value": "∞",
+      "label": "Ideas to design"
+    },
+    {
+      "value": "100%",
+      "label": "Details matter"
+    }
+  ],
+  "skills": [
+    "Roblox Studio",
+    "UI / UX",
+    "Web design",
+    "Figma"
+  ],
+  "services": [
+    {
+      "number": "01",
+      "title": "UI Designing",
+      "description": "Creative, colorful and interactive UI designs to make a better playable interface for the user."
+    },
+    {
+      "number": "02",
+      "title": "UI exporting",
+      "description": "Will export readily designed UI from figma/photoshop into roblox studio (will include proper device scaling)."
+    }
+  ],
+  "socials": [
+    {
+      "name": "Discord",
+      "url": "https://discord.com/users/892321333860524042"
+    },
+    {
+      "name": "X (Twitter)",
+      "url": "https://x.com/Pretzz_UI"
+    },
+    {
+      "name": "Roblox",
+      "url": "https://www.roblox.com/users/2351231438/profile"
+    }
+  ],
+  "projects": [
+    {
+      "id": "snowball-io",
+      "title": "Detective's Diary",
+      "category": "Cartoony Themed",
+      "description": "A cartoony themed UI to show a detective's diary",
+      "year": "2026",
+      "image": "https://pbs.twimg.com/media/HCAPNALbMAAmP4j?format=jpg&name=4096x4096",
+      "url": "https://pbs.twimg.com/media/HCAPNALbMAAmP4j?format=jpg&name=4096x4096",
+      "github": "",
+      "featured": true,
+      "art": "orange"
+    },
+    {
+      "id": "outfit-studio",
+      "title": "Power Selector Wheel",
+      "category": "Dark Themed",
+      "description": "A dark themed Power Selector Wheel with custom icons",
+      "year": "2026",
+      "image": "/uploads/c885f20d-4d22-4204-b78c-716a2a870664.png",
+      "url": "https://pbs.twimg.com/media/HGmPFqcbQAAmcAW?format=png&name=900x900",
+      "github": "",
+      "featured": true,
+      "art": "snow"
+    },
+    {
+      "id": "641dbbee-9ea8-4453-bc3d-04c09edce5d3",
+      "title": "Gun Shop",
+      "category": "Cartoony Theme",
+      "description": "A crayon styled cartoony gun shop with custom drawn icons and headers.",
+      "year": "2026",
+      "image": "/uploads/2e889c1c-c22f-4578-9e25-0792b51e6842.png",
+      "url": "https://pbs.twimg.com/media/HDdYXKhaEAAGqiY?format=jpg&name=medium",
+      "github": "",
+      "featured": false,
+      "art": "orange"
+    },
+    {
+      "id": "28fe014d-cc64-4b2f-83f0-b248b0c354a2",
+      "title": "Market Shop",
+      "category": "Cartoony Theme",
+      "description": "A cartoony themed custom drawn UI frame representing a market",
+      "year": "2026",
+      "image": "/uploads/8939729b-2c90-4cf0-942a-e4de2705736c.png",
+      "url": "https://pbs.twimg.com/media/HSVJA23acAAwTKm?format=jpg&name=medium",
+      "github": "",
+      "featured": false,
+      "art": "orange"
+    }
+  ]
+}

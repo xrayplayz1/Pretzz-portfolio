@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101317" />
+  <title>Admin — Portfolio Studio</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="/admin.css" />
+  <script src="/admin.js" defer></script>
+</head>
+<body>
+  <div id="login-view" class="login-view" hidden>
+    <div class="login-decoration decor-one"></div><div class="login-decoration decor-two"></div>
+    <form class="login-box" id="login-form">
+      <div class="admin-logo">m<span>.</span><span class="logo-caption">PORTFOLIO STUDIO</span></div>
+      <div class="login-kicker"><span class="pulse"></span> RESTRICTED ACCESS</div>
+      <h1>Welcome <em>back.</em></h1>
+      <p>Your little corner of the internet, under your control.</p>
+      <label for="password">ADMIN PASSWORD</label>
+      <input id="password" name="password" type="password" required autocomplete="current-password" placeholder="Enter password" />
+      <button type="submit" id="login-submit">UNLOCK DASHBOARD <span>↗</span></button>
+      <div id="login-error" class="login-error" role="alert"></div>
+      <a href="/" class="return-site">← BACK TO PORTFOLIO</a>
+    </form>
+  </div>
+
+  <div class="admin-layout" id="dashboard-view" hidden>
+    <aside class="sidebar" id="sidebar">
+      <a href="/" class="sidebar-logo" aria-label="Portfolio home"><span class="admin-logo">m<span>.</span></span><span>STUDIO <small>ADMIN PANEL</small></span></a>
+      <div class="sidebar-section-label">WORKSPACE</div>
+      <nav class="sidebar-nav" id="sidebar-nav" aria-label="Admin sections">
+        <button type="button" data-tab="overview" class="active"><span class="nav-symbol">▦</span> Overview</button>
+        <button type="button" data-tab="content"><span class="nav-symbol">✎</span> Site content</button>
+        <button type="button" data-tab="projects"><span class="nav-symbol">◈</span> Projects</button>
+        <button type="button" data-tab="expertise"><span class="nav-symbol">✳</span> Skills & services</button>
+        <button type="button" data-tab="links"><span class="nav-symbol">↗</span> Links & contact</button>
+      </nav>
+      <div class="sidebar-section-label sidebar-section-second">ACCOUNT</div>
+      <nav class="sidebar-nav"><button type="button" data-tab="security"><span class="nav-symbol">◇</span> Security</button></nav>
+      <div class="sidebar-bottom"><div class="side-status"><span class="pulse"></span> WEBSITE ONLINE</div><a href="/" target="_blank" rel="noopener noreferrer" class="view-site">VIEW LIVE SITE <span>↗</span></a><button type="button" id="logout">Log out <span>⤴</span></button></div>
+    </aside>
+    <div class="main-area">
+      <header class="topbar"><div class="topbar-left"><button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">☰</button><span>PORTFOLIO STUDIO</span><span class="crumb">/</span><strong id="page-crumb">Overview</strong></div><div class="topbar-right"><span id="save-state" class="save-state">All changes saved</span><button type="button" id="save-main" class="save-button">SAVE CHANGES <span>↗</span></button></div></header>
+      <main class="workspace">
+        <section id="tab-overview" class="tab-panel">
+          <div class="welcome-row"><div><div class="section-label"><span class="dot"></span> YOUR CREATIVE CONTROL ROOM</div><h1>Hey, <em>creator.</em></h1><p>Everything you need to make your portfolio yours.</p></div><div class="welcome-symbol">✳</div></div>
+          <div class="metric-grid" id="metrics"></div>
+          <div class="overview-grid"><div class="panel"><div class="panel-heading"><h2>Quick edits</h2><span>✳</span></div><p>Make changes to your portfolio without touching a single line of code.</p><div class="quick-links"><button data-jump="content">Edit your introduction <span>↗</span></button><button data-jump="projects">Manage featured projects <span>↗</span></button><button data-jump="links">Update social links <span>↗</span></button></div></div><div class="panel preview-panel"><div class="panel-heading"><h2>Live website</h2><span class="live-pill">● LIVE</span></div><div class="preview-art"><span class="preview-kicker">YOUR PORTFOLIO</span><strong>MAKE<br /><em>IT</em> REAL.</strong><div>DESIGN • DEVELOP • CREATE</div></div><a href="/" target="_blank" rel="noopener noreferrer" class="preview-link">OPEN PORTFOLIO <span>↗</span></a></div></div>
+        </section>
+
+        <section id="tab-content" class="tab-panel" hidden>
+          <div class="page-heading"><div class="section-label"><span class="dot"></span> EDITOR / 01</div><h1>Site <em>content.</em></h1><p>Your story, your words. Everything updates on your portfolio when you save.</p></div>
+          <div class="form-stack">
+            <div class="panel"><div class="panel-heading"><h2>Identity</h2><span class="heading-tag">PERSONAL</span></div><div class="fields two-col"><label>Display name<input data-field="name" maxlength="90" /></label><label>What you do<input data-field="role" maxlength="130" /></label></div></div>
+            <div class="panel"><div class="panel-heading"><h2>Hero section</h2><span class="heading-tag">FIRST IMPRESSION</span></div><div class="fields"><label>Eyebrow text<input data-field="eyebrow" maxlength="140" /></label><div class="fields two-col"><label>Headline (first line)<input data-field="headline" maxlength="180" /></label><label>Headline (accent line)<input data-field="headlineAccent" maxlength="180" /></label></div><label>Short intro<textarea data-field="intro" maxlength="520" rows="3"></textarea></label></div></div>
+            <div class="panel"><div class="panel-heading"><h2>About section</h2><span class="heading-tag">YOUR STORY</span></div><div class="fields"><label>About headline<input data-field="aboutTitle" maxlength="140" /></label><label>About text<textarea data-field="about" maxlength="2200" rows="7"></textarea></label></div></div>
+            <div class="panel"><div class="panel-heading"><h2>Finishing touches</h2><span class="heading-tag">BRANDING</span></div><div class="fields"><label>Contact headline<input data-field="contactTitle" maxlength="150" /></label><label>Footer text<input data-field="footer" maxlength="180" /></label><label class="color-field">Accent color <span class="color-row"><input data-field="accent" type="color" /><span id="color-hex">#ccfa5a</span></span></label></div></div>
+            <div class="panel"><div class="panel-heading"><h2>Quick stats</h2><button type="button" class="small-add" id="add-stat">+ ADD STAT</button></div><p class="panel-help">Optional numbers or facts shown in the About section.</p><div id="stats-editor" class="dynamic-list"></div></div>
+          </div>
+        </section>
+
+        <section id="tab-projects" class="tab-panel" hidden>
+          <div class="page-heading page-heading-split"><div><div class="section-label"><span class="dot"></span> EDITOR / 02</div><h1>Selected <em>work.</em></h1><p>Add projects, upload cover images, edit details, and reorder your highlights.</p></div><button type="button" class="add-button" id="add-project">+ ADD PROJECT</button></div>
+          <div class="project-editor-list" id="projects-editor"></div>
+        </section>
+
+        <section id="tab-expertise" class="tab-panel" hidden>
+          <div class="page-heading"><div class="section-label"><span class="dot"></span> EDITOR / 03</div><h1>What you <em>do.</em></h1><p>Show visitors what you're great at, and the tools you work with.</p></div>
+          <div class="form-stack"><div class="panel"><div class="panel-heading"><h2>Skills & tools</h2><span class="heading-tag">UP TO 40</span></div><p class="panel-help">Enter one skill per line or separate them with commas.</p><label class="standalone-label">Your skills<textarea id="skills-input" rows="7" placeholder="Luau, Roblox Studio, UI engineering ..."></textarea></label></div><div class="panel"><div class="panel-heading"><h2>Services / expertise</h2><button type="button" class="small-add" id="add-service">+ ADD SERVICE</button></div><div id="services-editor" class="dynamic-list"></div></div></div>
+        </section>
+
+        <section id="tab-links" class="tab-panel" hidden>
+          <div class="page-heading"><div class="section-label"><span class="dot"></span> EDITOR / 04</div><h1>Stay <em>connected.</em></h1><p>Put your best contact details and social profiles front and center.</p></div>
+          <div class="form-stack"><div class="panel"><div class="panel-heading"><h2>Contact information</h2><span class="heading-tag">CONTACT</span></div><div class="fields"><label>Email address<input type="email" data-field="email" maxlength="180" /></label><label>Location / timezone<input data-field="location" maxlength="100" /></label><label>Availability line<input data-field="availability" maxlength="140" /></label></div></div><div class="panel"><div class="panel-heading"><h2>Social profiles</h2><button type="button" class="small-add" id="add-social">+ ADD LINK</button></div><p class="panel-help">Use complete URLs beginning with https://. Empty links are hidden from visitors.</p><div id="socials-editor" class="dynamic-list"></div></div></div>
+        </section>
+
+        <section id="tab-security" class="tab-panel" hidden>
+          <div class="page-heading"><div class="section-label"><span class="dot"></span> ACCOUNT / SECURITY</div><h1>Keep it <em>safe.</em></h1><p>Change your admin password whenever you like.</p></div>
+          <form id="password-form" class="panel security-form"><div class="panel-heading"><h2>Change admin password</h2><span class="heading-tag">SECURE</span></div><div class="fields"><label>Current password<input name="current" type="password" autocomplete="current-password" required /></label><label>New password (at least 12 characters)<input name="next" type="password" autocomplete="new-password" minlength="12" required /></label><label>Confirm new password<input name="confirm" type="password" autocomplete="new-password" minlength="12" required /></label></div><button class="add-button" type="submit">UPDATE PASSWORD ↗</button><p class="panel-help">You'll be signed out of all sessions after a successful password change.</p></form>
+        </section>
+      </main>
+      <footer class="workspace-footer"><span>PORTFOLIO STUDIO / MADE FOR MAKERS</span><span>BUILD. SHIP. REPEAT. ✳</span></footer>
+    </div>
+  </div>
+  <div role="status" aria-live="polite" id="toast" class="toast" hidden></div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d0f12" />
+  <meta name="description" content="Roblox developer and creative systems designer. Explore projects, skills and collaborations." />
+  <title>Master Lua — Roblox Developer</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/motion.css" />
+  <script src="/app.js" defer></script>
+  <script src="/motion.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="page-wrap">
+    <header class="header shell" id="top">
+      <a href="#top" class="brand" aria-label="Back to top"><span class="brand-mark">m<span class="brand-point">.</span></span><span class="brand-word" id="brand-name">MASTER LUA</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#work">Work <span>↗</span></a>
+        <a href="#about">About <span>↗</span></a>
+        <a href="#expertise">Expertise <span>↗</span></a>
+      </nav>
+      <a class="header-contact" href="#contact">LET'S CONNECT <span class="circle-arrow">↗</span></a>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#work">Work</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section class="hero shell" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-light"></span><span id="eyebrow">HEY, I'M MASTER LUA — DEVELOPER & CREATOR</span></div>
+          <h1 class="hero-heading"><span id="headline">MAKING IDEAS</span><em id="headline-accent">FEEL ALIVE.</em></h1>
+          <p class="hero-description" id="intro">I build bold Roblox experiences, expressive interfaces, and rock-solid game systems.</p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-accent">EXPLORE MY WORK <span aria-hidden="true">↗</span></a>
+            <a href="#contact" class="btn btn-outline">GET IN TOUCH <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-side-note"><span class="tiny-sun">✳</span><span>CRAFTED WITH INTENTION.<br />BUILT TO FEEL DIFFERENT.</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Abstract 3D game development illustration">
+          <div class="visual-topline"><span>PLAYGROUND / 001</span><span class="visual-cross">✳</span></div>
+          <div class="hero-orbit orbit-1"></div><div class="hero-orbit orbit-2"></div>
+          <img src="/assets/hero.svg" alt="Vibrant stylized floating game pieces" class="hero-illustration" />
+          <div class="floating-tag floating-tag-left"><span>✳</span> PIXEL PERFECT</div>
+          <div class="floating-tag floating-tag-right"><span class="tag-dot"></span> SYSTEMS ONLINE</div>
+          <div class="visual-bottomline"><span>IMAGINE <span aria-hidden="true">→</span> CREATE <span aria-hidden="true">→</span> PLAY</span><span>2026 ©</span></div>
+        </div>
+        <div class="hero-footer">
+          <div class="scroll-label"><span class="scroll-symbol">↓</span> SCROLL TO DISCOVER</div>
+          <span class="hero-location" id="location">Available worldwide · Remote</span>
+        </div>
+      </section>
+
+      <section class="section work-section shell" id="work">
+        <div class="section-head reveal">
+          <div><div class="section-kicker"><span class="kicker-square"></span> 01 / SELECTED PROJECTS</div><h2>THE GOOD <em>STUFF.</em></h2></div>
+          <p>Selected experiments, experiences, and systems. Built with detail and a little bit of obsession.</p>
+        </div>
+        <div class="projects" id="projects" aria-live="polite"></div>
+        <div class="work-bottom reveal"><span>MORE COOL THINGS IN THE WORKS</span><span class="asterisk">✳</span></div>
+      </section>
+
+      <section class="about-band" id="about">
+        <div class="shell about-layout">
+          <div class="about-left reveal"><div class="section-kicker"><span class="kicker-square"></span> 02 / WHO I AM</div><div class="about-icon" aria-hidden="true">✳</div><div class="about-stat-row" id="stats"></div></div>
+          <div class="about-right reveal"><h2 id="about-title">Building worlds people want to stay in.</h2><div class="about-description" id="about-text"></div><a href="#contact" class="text-link">LET'S MAKE SOMETHING <span>↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="section expertise shell" id="expertise">
+        <div class="section-head reveal"><div><div class="section-kicker"><span class="kicker-square"></span> 03 / WHAT I DO</div><h2>MY <em>PLAYBOOK.</em></h2></div><p>Good code. Great feel. The magic happens somewhere in between.</p></div>
+        <div class="service-grid" id="services"></div>
+        <div class="skills-block reveal"><span class="mini-label">TOOLS OF THE TRADE</span><div class="skills" id="skills"></div></div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="shell contact-inner reveal">
+          <div class="contact-top"><div class="section-kicker"><span class="kicker-square"></span> 04 / SAY HELLO</div><div class="availability"><span class="status-light"></span><span id="availability">OPEN TO SELECT PROJECTS</span></div></div>
+          <h2 id="contact-title">HAVE SOMETHING COOL IN MIND?</h2>
+          <div class="contact-bottom"><a id="email-link" href="mailto:hello@example.com" class="contact-email">LET'S TALK <span class="contact-arrow">↗</span></a><div><p>NO BORING IDEAS ALLOWED.</p><p id="contact-email-label">hello@example.com</p></div></div>
+          <div class="contact-decoration" aria-hidden="true">✳</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell"><div class="footer-brand"><span class="brand-mark">m<span class="brand-point">.</span></span><span id="footer-name">MASTER LUA</span></div><div class="footer-middle" id="footer-text">Made with caffeine, curiosity & a lot of Luau.</div><div class="footer-socials" id="socials"></div><a href="#top" class="back-top" title="Back to top" aria-label="Back to top">↑</a></footer>
+  </div>
+</body>
+</html>
